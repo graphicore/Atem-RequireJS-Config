@@ -21,7 +21,7 @@ define([], function(){
     function _copySetup(from, to, skip) {
         var k;
         for(k in from) {
-            if( k in skip )
+            if( skip && k in skip )
                 continue;
 
             if(from[k] instanceof Array && to[k] instanceof Array)
@@ -29,7 +29,7 @@ define([], function(){
                 Array.prototype.push.apply(to[k], from[k]);
             else if(typeof from[k] === 'object' && typeof to[k] === 'object')
                 copyItems(from[k], to[k]);
-            else if(setup[k] instanceof Array)
+            else if(from[k] instanceof Array)
                 to[k] = from[k].slice();
             else if(typeof from[k] === 'object') {
                 to[k] = {};
