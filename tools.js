@@ -13,12 +13,12 @@ define([], function(){
 
 
     /**
-     * This is no deep cloning, but at it clones so deep that the
-     * "bowerPrefix" string manipulation doesn't change the "defaults"
-     * object, and that a default "excludeShallow" array is not extended
-     * by its counterpart in setup
+     * This is no deep cloning, but it clones so deep that the "bowerPrefix"
+     * string manipulation doesn't change the "defaults"  object, and that
+     * a efault "excludeShallow" array is not extended by its counterpart
+     * in setup.
      */
-    function _copySetup(from, to, skip) {
+    function copySetup(from, to, skip) {
         var k;
         for(k in from) {
             if( skip && k in skip )
@@ -42,8 +42,8 @@ define([], function(){
 
     function configure(defaults, setup, require) {
         var result = {}, k;
-        _copySetup(defaults, result);
-        _copySetup(setup, result, {'bowerPrefix': 1});
+        copySetup(defaults, result);
+        copySetup(setup, result, {'bowerPrefix': 1});
 
         if('bowerPrefix' in setup && 'paths' in result)
             for(k in result.paths)
@@ -54,5 +54,6 @@ define([], function(){
     return {
         configure: configure
       , copyItems: copyItems
+      , copySetup: copySetup
     };
 });
