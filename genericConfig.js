@@ -19,7 +19,6 @@ define([], function(){
           , 'ufojs': '%bower%/ufoJS/lib'
 
           , 'require/text': '%bower%/requirejs-text/text'
-          , 'path': '%bower%/path/path'
           , 'yaml': '%bower%/js-yaml/dist/js-yaml.min'
           , 'jszip': '%bower%/jszip/dist/jszip'
           , 'EventEmitter': '%bower%/event-emitter.js/dist/event-emitter'
