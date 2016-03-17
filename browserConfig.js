@@ -25,12 +25,12 @@ define([
           , 'jquery': '%bower%/jquery/dist/jquery.min'
           , 'd3': '%bower%/d3/d3.min'
           , 'jquery-ui': '%bower%/jquery.ui/jquery-ui.min'
-          , 'path': '%bower%/path/path' // browserify version of nodes path modules
+          // browserify-converted versions of node modules
+          , 'path': '%bower%/path/path'
+          , 'util': '%bowe%/util/util'
           // this is a bit special!
           , 'socketio': '../socket.io/socket.io'
         }
-
-
         // exclude on build
         // TODO: is this probably just metapolator specific at the moment
       , excludeShallow: [
