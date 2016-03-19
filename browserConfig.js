@@ -59,23 +59,6 @@ define([
         }
     };
 
-    try {
-        /*jshint evil:true*/
-        eval("(function *(){})()");
-        // TODO: this overide probably fails when not in metapolator
-        //       maybe there can be a more generic approach to this
-        // The generators detection is relevant for nodeJS as well
-        var paths = {
-            'metapolator/rendering/glyphBasics': 'rendering/glyphBasics.es6'
-          , 'metapolator/project/UFOExportController': 'project/UFOExportController.es6'
-          , 'metapolator/project/OTFExportController': 'project/OTFExportController.es6'
-        };
-        copyItems(paths, browserConfig.path);
-    } catch(err) {
-        /*global console:true*/
-        console.info("No generators, falling back.");
-    }
-
     copySetup(browserConfig, defaults);
     return configure.bind(null, defaults);
 });

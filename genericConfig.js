@@ -1,9 +1,11 @@
-define([], function(){
+define(['./tools'], function(tools){
     "use strict";
+
+     var copyItems = tools.copyItems;
 
     // this is configuration that is shared between all configuration
     // targets. I.e. Node.js and Browsers at the moment
-    return {
+    var config = {
         paths: {
             'Atem-CPS': '%bower%/Atem-CPS/lib'
           , 'Atem-CPS-whitelisting': '%bower%/Atem-CPS-whitelisting/lib'
@@ -32,5 +34,11 @@ define([], function(){
           , 'BEF': '%bower%/Bauhaus-Emblem-Font/app/lib'
 
         }
+      , es6Variants: [
+            'Atem-MOM/rendering/basics'
+          , 'Atem-MOM/export/UFOExporter'
+          , 'Atem-MOM/export/OTFExporter'
+        ]
     };
+    return config;
 });
