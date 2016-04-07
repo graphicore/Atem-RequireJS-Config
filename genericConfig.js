@@ -23,6 +23,7 @@ define([], function(){
           , 'util-logging': '%bower%/util-logging-amd/lib'
 
           , 'require/text': '%bower%/requirejs-text/text'
+          , 'require/domReady': '%bower%/requirejs-domReady/domReady'
           , 'yaml': '%bower%/js-yaml/dist/js-yaml.min'
           , 'jszip': '%bower%/jszip/dist/jszip'
           , 'EventEmitter': '%bower%/event-emitter.js/dist/event-emitter'
