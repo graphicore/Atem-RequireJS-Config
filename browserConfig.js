@@ -27,7 +27,7 @@ define([
           , 'jquery-ui': '%bower%/jquery.ui/jquery-ui.min'
           // browserify-converted versions of node modules
           , 'path': '%bower%/path/path'
-          , 'util': '%bowe%/util/util'
+          , 'util': '%bower%/util/util'
           // this is a bit special!
           , 'socketio': '../socket.io/socket.io'
         }
