@@ -19,7 +19,7 @@ define([
     // browser specific configuration goes here
     browserConfig = {
         paths: {
-            'require/domReady': '%bower%/requirejs-domready/domReady'
+            'require/domReady': '%bower%/requirejs-domReady/domReady'
           , 'angular': '%bower%/angular/angular'
           , 'filesaver': '%bower%/file-saver.js/FileSaver'
           , 'jquery': '%bower%/jquery/dist/jquery.min'
