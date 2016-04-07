@@ -16,6 +16,7 @@ define(['./tools'], function(tools){
           , 'Atem-Property-Language': '%bower%/Atem-Property-Language/lib'
           , 'Atem-Logging': '%bower%/Atem-Logging/lib'
           , 'Atem-MOM': '%bower%/Atem-MOM/lib'
+          , 'Atem-MOM-Toolkit': '%bower%/Atem-MOM-Toolkit/lib'
           , 'obtain': '%bower%/obtainjs/lib'
           , 'complex': '%bower%/complex/lib'
           , 'gonzales': '%bower%/gonzales/amd'
