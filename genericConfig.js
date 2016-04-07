@@ -7,6 +7,7 @@ define([], function(){
         paths: {
             'Atem-CPS': '%bower%/Atem-CPS/lib'
           , 'Atem-CPS-whitelisting': '%bower%/Atem-CPS-whitelisting/lib'
+          , 'Atem-CPS-Toolkit': '%bower%/Atem-CPS-Toolkit/lib'
           , 'Atem-Errors': '%bower%/Atem-Errors/lib'
           , 'Atem-IO': '%bower%/Atem-IO/lib'
           , 'Atem-Math-Tools': '%bower%/Atem-Math-Tools/lib'
