@@ -1,7 +1,5 @@
-define(['./tools'], function(tools){
+define([], function(){
     "use strict";
-
-     var copyItems = tools.copyItems;
 
     // this is configuration that is shared between all configuration
     // targets. I.e. Node.js and Browsers at the moment
@@ -29,10 +27,12 @@ define(['./tools'], function(tools){
           , 'jszip': '%bower%/jszip/dist/jszip'
           , 'EventEmitter': '%bower%/event-emitter.js/dist/event-emitter'
           , 'opentype': '%bower%/opentype.js/dist/opentype.min'
+          , 'marked': '%bower%/marked/lib/marked'
 
             // Atem applications must override their own path in their own setup
           , 'metapolator': '%bower%/metapolator/app/lib'
           , 'BEF': '%bower%/Bauhaus-Emblem-Font/app/lib'
+          , 'Atem-CPS-Developer-Tool': '%bower%/Atem-CPS-Developer-Tool/app/lib'
 
         }
       , es6Variants: [
