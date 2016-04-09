@@ -43,13 +43,18 @@ define([
           , 'metapolator/project/OTFExportController.js'
         ]
       , shim: {
+      // this created a dependency to jquery that is not true just
+      // for angular. If a module has a hard dependency on jquery
+      // it should be defined for that module directly.
+      // I'm not a friend of having jquery as such a low level dependency
+      // for all of atem. Especially because we hardly need it.
             angular: {
-              deps: ['jquery'],
+      //        deps: ['jquery'],
               exports: 'angular'
             }
-          , sortable: {
-                deps: ['jquery-ui', 'angular']
-            }
+      //    , sortable: {
+      //          deps: ['jquery-ui', 'angular']
+      //      }
           , yaml: {
                 exports: 'jsyaml'
             }
