@@ -29,6 +29,7 @@ define([], function(){
           , 'EventEmitter': '%bower%/event-emitter.js/dist/event-emitter'
           , 'opentype': '%bower%/opentype.js/dist/opentype.min'
           , 'marked': '%bower%/marked/lib/marked'
+          , 'mustache': '%bower%/mustache.js/mustache'
 
             // Atem applications must override their own path in their own setup
           , 'metapolator': '%bower%/metapolator/app/lib'
