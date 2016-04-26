@@ -24,7 +24,8 @@ define([
           , 'filesaver': '%bower%/file-saver.js/FileSaver'
           , 'jquery': '%bower%/jquery/dist/jquery.min'
           , 'd3': '%bower%/d3/d3.min'
-          , 'jquery-ui': '%bower%/jquery.ui/jquery-ui.min'
+          , 'jquery-ui': '%bower%/jquery.ui/ui'
+          , 'angular-ui-sortable': 'bower_components/angular-ui-sortable/sortable.min'
           // browserify-converted versions of node modules
           , 'path': '%bower%/path/path'
           , 'util': '%bower%/util/util'
@@ -52,9 +53,9 @@ define([
       //        deps: ['jquery'],
               exports: 'angular'
             }
-      //    , sortable: {
-      //          deps: ['jquery-ui', 'angular']
-      //      }
+          , 'angular-ui-sortable': {
+                deps: ['jquery-ui/sortable', 'angular']
+            }
           , yaml: {
                 exports: 'jsyaml'
             }
