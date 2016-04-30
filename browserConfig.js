@@ -34,14 +34,15 @@ define([
         }
         // exclude on build
         // TODO: is this probably just metapolator specific at the moment
+      // can we just use babel for this?
       , excludeShallow: [
             // the optimizer can't read es6 generators
             // NOTE: for dependency tracing the genereated es5 version is used
-            // by the optimizer. The feature detection below then swaps the path
-            // used to load glyphBasics when the browser executes this.
-            'metapolator/rendering/glyphBasics'
-          , 'metapolator/project/UFOExportController.js'
-          , 'metapolator/project/OTFExportController.js'
+            // by the optimizer. The feature detection will swaps the paths
+            // to load the right module
+            'Atem-MOM/rendering/basics'
+          , 'Atem-MOM/export/UFOExporter'
+          , 'Atem-MOM/export/OTFExporter'
         ]
       , shim: {
       // this created a dependency to jquery that is not true just

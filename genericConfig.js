@@ -24,6 +24,7 @@ define([], function(){
           , 'util-logging': '%bower%/util-logging-amd/lib'
           , 'metapolator-cpsLib': '%bower%/metapolator-cpsLib/lib'
 
+          , 'requireLib': '%bower%/requirejs/require'
           , 'require/text': '%bower%/requirejs-text/text'
           , 'yaml': '%bower%/js-yaml/dist/js-yaml.min'
           , 'jszip': '%bower%/jszip/dist/jszip'
