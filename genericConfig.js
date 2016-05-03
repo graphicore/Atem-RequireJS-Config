@@ -43,6 +43,7 @@ define([], function(){
             'Atem-MOM/rendering/basics'
           , 'Atem-MOM/export/UFOExporter'
           , 'Atem-MOM/export/OTFExporter'
+          , 'Atem-MOM/import/UFOImporter'
         ]
     };
     return config;

@@ -43,6 +43,7 @@ define([
             'Atem-MOM/rendering/basics'
           , 'Atem-MOM/export/UFOExporter'
           , 'Atem-MOM/export/OTFExporter'
+          , 'Atem-MOM/import/UFOImporter'
         ]
       , shim: {
       // this created a dependency to jquery that is not true just
