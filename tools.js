@@ -15,7 +15,7 @@ define([], function(){
     /**
      * This is no deep cloning, but it clones so deep that the "bowerPrefix"
      * string manipulation doesn't change the "defaults"  object, and that
-     * a efault "excludeShallow" array is not extended by its counterpart
+     * a default "excludeShallow" array is not extended by its counterpart
      * in setup.
      */
     function copySetup(from, to, skip) {
